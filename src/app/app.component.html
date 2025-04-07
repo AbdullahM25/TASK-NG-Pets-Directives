@@ -12,5 +12,8 @@
     <app-pet [pet]="pets[2]" />
     <app-pet [pet]="pets[3]" />
     <app-pet [pet]="pets[4]" /> -->
+    <app-pet *ngFor="let pet of pets" [pet]="pet"></app-pet>
+    <!-- <app-pet *ngIf="isAdopted"> adopted, pet </app-pet> -->
+    <!-- <app-pet *ngIf="!pets.isAdopted" [pet]="pets"></app-pet> -->
   </div>
 </div>
